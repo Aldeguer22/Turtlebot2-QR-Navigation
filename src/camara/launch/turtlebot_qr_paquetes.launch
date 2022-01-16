@@ -1,0 +1,4 @@
+<launch>
+        <node pkg="camara" type="camera2_tb2.py" name="LectorQR"/>
+        <node pkg="camara" type="maquina_estados.py" name="MaquinaEstados" output="screen"/>
+</launch>
