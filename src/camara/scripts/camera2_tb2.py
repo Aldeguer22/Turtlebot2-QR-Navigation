@@ -35,8 +35,7 @@ class camera_1:
         barcodeType = barcode.type
         # Dibujo del contenido del qr
         text = "{} ({})".format(barcodeData, barcodeType)
-        cv2.putText(image, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX,
-            0.5, (0, 0, 255), 2))
+        cv2.putText(image, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX,0.5, (0, 0, 255), 2)
         if barcodes:
             dato = barcodes[0][0] #Coger solo el dato data del qr
             
